@@ -12,9 +12,9 @@ import { environment } from '../../environments/environment.development';
 })
 export class CustomerServiceService {
   private http = inject(HttpClient);
-  getCustomerDetailsURL = `${environment.baseUrl}api/Customer`;
-  addCustomerDetailsURL = `${environment.baseUrl}api/Customer/addCustomer`;
-  exportExcelURL = `${environment.baseUrl}api/Customer/export`;
+  getCustomerDetailsURL = `${environment.baseUrl}/api/Customer`;
+  addCustomerDetailsURL = `${environment.baseUrl}/api/Customer/addCustomer`;
+  exportExcelURL = `${environment.baseUrl}/api/Customer/export`;
   constructor() {}
 
   getCustomerDetails() {
