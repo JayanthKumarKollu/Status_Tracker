@@ -124,3 +124,4 @@ C:\Users\jayanth kumar.k\OneDrive\Documents\.NET Projects\Status_Tracker_App\Sta
 C:\Users\jayanth kumar.k\OneDrive\Documents\.NET Projects\Status_Tracker_App\Status_Tracking_Backend\bin\Debug\net8.0\RBush.dll
 C:\Users\jayanth kumar.k\OneDrive\Documents\.NET Projects\Status_Tracker_App\Status_Tracking_Backend\bin\Debug\net8.0\SixLabors.Fonts.dll
 C:\Users\jayanth kumar.k\OneDrive\Documents\.NET Projects\Status_Tracker_App\Status_Tracking_Backend\bin\Debug\net8.0\System.IO.Packaging.dll
+C:\Users\jayanth kumar.k\OneDrive\Documents\.NET Projects\Status_Tracker_App\Status_Tracking_Backend\obj\Debug\net8.0\Status_Tracking_Backend.sourcelink.json

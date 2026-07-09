@@ -10,7 +10,7 @@ namespace Status_Tracking_Backend.Models
         public String? Id { get; set; }
         //public DateOnly? Date { get; set; }
         public String? Date { get; set; }
-        public String Month { get; set; }
+        public String? Month { get; set; }
         public String? Customer_Name { get; set; }
         public String? Mobile_Number { get; set; }
         public String? RM_Name { get; set; }
