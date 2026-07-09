@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "Status_Tracking_Backend.Controllers.CustomerController",
+    "Method": "GetCustomerDetails",
+    "RelativePath": "api/Customer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Status_Tracking_Backend.Controllers.CustomerController",
+    "Method": "AddCustomer",
+    "RelativePath": "api/Customer/addCustomer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customer",
+        "Type": "Status_Tracking_Backend.Models.Customers",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Status_Tracking_Backend.Controllers.CustomerController",
+    "Method": "ExportExcel",
+    "RelativePath": "api/Customer/export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

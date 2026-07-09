@@ -1,0 +1,18 @@
+# Angular
+Frontend/node_modules/
+Frontend/dist/
+
+# ASP.NET Core
+Backend/bin/
+Backend/obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Environment
+.env
