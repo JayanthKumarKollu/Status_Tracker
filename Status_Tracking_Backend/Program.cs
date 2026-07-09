@@ -15,7 +15,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowAngular",
         policy =>
         {
-            policy.WithOrigins("https://statustrackerr.netlify.app/")
+            policy.WithOrigins("https://statustrackerr.netlify.app")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
