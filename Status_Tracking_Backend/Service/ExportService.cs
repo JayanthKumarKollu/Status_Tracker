@@ -64,7 +64,7 @@ namespace Status_Tracking_Backend.Service
                 workSheet1.Cell(countRow1, 7).Value = group.Count(x => string.Equals(x.Status, "closed", StringComparison.OrdinalIgnoreCase));
                 workSheet1.Cell(countRow1, 8).Value = group.Count(x => string.Equals(x.Status, "without ct", StringComparison.OrdinalIgnoreCase));
                 workSheet1.Cell(countRow1, 9).Value = group.Count(x => string.Equals(x.Status, "hot followup", StringComparison.OrdinalIgnoreCase));
-                workSheet1.Cell(countRow1, 10).Value = group.Count(x => string.Equals(x.Status, "old followp", StringComparison.OrdinalIgnoreCase));
+                workSheet1.Cell(countRow1, 10).Value = group.Count(x => string.Equals(x.Status, "old followup", StringComparison.OrdinalIgnoreCase));
                 workSheet1.Cell(countRow1, 11).Value = group.Count();
                 countRow1++;
 
@@ -96,7 +96,7 @@ namespace Status_Tracking_Backend.Service
                 workSheet2.Cell(countRow2, 6).Value = group.Count(x => string.Equals(x.Status, "closed", StringComparison.OrdinalIgnoreCase));
                 workSheet2.Cell(countRow2, 7).Value = group.Count(x => string.Equals(x.Status, "without ct", StringComparison.OrdinalIgnoreCase));
                 workSheet2.Cell(countRow2, 8).Value = group.Count(x => string.Equals(x.Status, "hot followup", StringComparison.OrdinalIgnoreCase));
-                workSheet2.Cell(countRow2, 9).Value = group.Count(x => string.Equals(x.Status, "old followp", StringComparison.OrdinalIgnoreCase));
+                workSheet2.Cell(countRow2, 9).Value = group.Count(x => string.Equals(x.Status, "old followup", StringComparison.OrdinalIgnoreCase));
                 workSheet2.Cell(countRow2, 10).Value = group.Count();
                 countRow2++;
             }
