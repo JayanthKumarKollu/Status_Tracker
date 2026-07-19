@@ -3,19 +3,20 @@ using Status_Tracking_Backend.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 
 builder.Services.AddControllers();
 builder.Services.Configure<MongodbConfig>(builder.Configuration.GetSection("MongoDB"));
 builder.Services.AddSingleton<MongoDBService>();
-builder.Services.AddScoped<CustomerService>();
+builder.Services.AddScoped<ICustomerServices,CustomerService>();
 builder.Services.AddScoped<ExportService>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular",
         policy =>
         {
-            policy.WithOrigins("https://statustrackerr.netlify.app")
+           
+                  policy.WithOrigins("https://statustrackerr.netlify.app")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });

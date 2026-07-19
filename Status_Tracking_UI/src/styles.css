@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+:root {
+  /* ===========================
+     Application Theme Colors
+     =========================== */
+
+  --app-background: #1a202e;
+  --app-surface: #1f2937;
+  --app-surface-hover: #374151;
+  --app-border: #4b5563;
+
+  --app-text-primary: #f9fafb;
+  --app-text-secondary: #d1d5db;
+
+  --app-primary: #34d399;
+  --app-primary-hover: #10b981;
+}

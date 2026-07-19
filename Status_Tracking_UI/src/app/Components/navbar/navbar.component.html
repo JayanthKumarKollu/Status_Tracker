@@ -1,0 +1,56 @@
+<p-toolbar
+  [style]="{ 'border-radius': '2rem', padding: '0rem 1rem 0rem 1.5rem' }"
+>
+  <ng-template #start>
+    <div class="logo-Section">
+      <img src="logo5_100.png" alt="logo" />
+      <h2>Status Tracker</h2>
+    </div>
+  </ng-template>
+
+  <ng-template #end>
+    <div class="right-section">
+      <div class="desktop-menu">
+        <p-button
+          label="Home"
+          icon="pi pi-home"
+          variant="text"
+          (click)="goToHome()"
+        ></p-button>
+        <p-button
+          label="Add Customers"
+          icon="pi pi-plus"
+          variant="text"
+          (click)="goToAddCustomer()"
+        ></p-button>
+        <p-button
+          label="View Customers"
+          (click)="goToViewCustomer()"
+          icon="pi pi-list"
+          variant="text"
+        ></p-button>
+      </div>
+      <div class="mobile-menu">
+        <p-button
+          [icon]="menuOpen ? 'pi pi-times' : 'pi pi-bars'"
+          (click)="toggleMenu()"
+          class="mobile-menu-button"
+        ></p-button>
+      </div>
+    </div>
+  </ng-template>
+</p-toolbar>
+<nav class="mobile-nav" *ngIf="menuOpen">
+  <div class="mobile-menu-item" (click)="goToHome()">
+    <i class="pi pi-home"></i>
+    <span>Home</span>
+  </div>
+  <div class="mobile-menu-item" (click)="goToAddCustomer()">
+    <i class="pi pi-plus"></i>
+    <span>Add Customers</span>
+  </div>
+  <div class="mobile-menu-item" (click)="goToViewCustomer()">
+    <i class="pi pi-list"></i>
+    <span>View Customers</span>
+  </div>
+</nav>

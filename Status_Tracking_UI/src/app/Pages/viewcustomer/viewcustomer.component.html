@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="table-toolbar">
+    <p-iconField iconPosition="left">
+      <p-inputIcon class="pi pi-search"></p-inputIcon>
+
+      <input
+        pInputText
+        type="text"
+        placeholder="Search..."
+        [(ngModel)]="searchText"
+        (ngModelChange)="onSearch($event)"
+      />
+    </p-iconField>
+  </div>
+  <div classa="tale-container">
+    <p-table
+      [value]="customerDetails"
+      dataKey="id"
+      editMode="row"
+      scrollable="true"
+      scrollHeight="60vh"
+      responsiveLayout="scroll"
+      [lazy]="true"
+      [totalRecords]="totalRecords"
+      [rows]="pageSize"
+      [paginator]="true"
+      (onLazyLoad)="loadCustomers($event)"
+    >
+      <ng-template pTemplate="paginatorright">
+        <span style="font-weight: 600"> {{ totalRecords }} Records </span>
+      </ng-template>
+      <ng-template pTemplate="header">
+        <tr>
+          @for (column of columns; track column.field) {
+            <th style="width: 20%">{{ column.header }}</th>
+          }
+          <th class="action-column">Action</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-customer let-editing="editing">
+        <tr [pEditableRow]="customer">
+          @for (column of columns; track column.field) {
+            <td>
+              <p-cellEditor>
+                <ng-template pTemplate="output">
+                  {{ customer[column.field] }}</ng-template
+                >
+                <ng-template pTemplate="input"
+                  ><input pInputText [(ngModel)]="customer[column.field]"
+                /></ng-template>
+              </p-cellEditor>
+            </td>
+          }
+          <td>
+            <div class="action-buttons">
+              @if (editing) {
+                <p-button
+                  icon="pi pi-check"
+                  pSaveEditableRow
+                  (click)="updateCustomer(customer)"
+                  variant="text"
+                ></p-button>
+                <p-button
+                  icon="pi pi-times"
+                  pCancelEditableRow
+                  (click)="cancleUpdate()"
+                  variant="text"
+                ></p-button>
+              } @else {
+                <p-button
+                  icon="pi pi-pencil"
+                  pInitEditableRow
+                  variant="text"
+                ></p-button>
+                <p-button
+                  icon="pi pi-trash"
+                  variant="text"
+                  (click)="deleteCustomer(customer.id)"
+                ></p-button>
+              }
+            </div>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

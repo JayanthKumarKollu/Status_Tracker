@@ -1,0 +1,64 @@
+.logo-Section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.logo-Section img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 3rem;
+}
+.logo-Section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.right-section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  background: var(--app-surface);
+  border: 1px solid var(--app-border);
+  margin: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 3rem;
+}
+.mobile-menu-item {
+  padding: 0.9rem, 1rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  align-items: center;
+}
+.mobile-menu-item i {
+  color: var(--app-primary);
+  font-size: 1.1rem;
+}
+.mobile-menu-item span {
+  color: var(--app-text-primary);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.mobile-menu-item:hover {
+  background: var(--app-surface-hover);
+}
+
+@media screen and (max-width: 760px) {
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}

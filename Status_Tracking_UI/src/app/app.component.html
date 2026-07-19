@@ -1,24 +1,5 @@
-<div class="glass-background">
-  <div class="glass-card">
-    <div class="input-container">
-      <input
-        type="text"
-        [(ngModel)]="userInput"
-        placeholder="Enter text here..."
-        class="glass-input"
-      />
-    </div>
+<div class="container">
+  <app-navbar></app-navbar>
 
-    <div class="actions-container">
-      <button class="btn btn-submit" (click)="onSubmit()">Submit</button>
-
-      <button class="btn btn-clear" (click)="onClear()">
-        <span class="icon">⊘</span> Clear
-      </button>
-
-      <button class="btn btn-export" (click)="onExport()">
-        <span class="icon">⭳</span> Export
-      </button>
-    </div>
-  </div>
+  <router-outlet></router-outlet>
 </div>

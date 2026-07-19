@@ -1,0 +1,40 @@
+<div class="hero-container">
+  <div class="hero-content">
+    <div class="hero-badge">Welcome to Status Tracker</div>
+    <h1 class="hero-heading">Track. <span>Manage.</span> Analyze.</h1>
+    <p class="hero-description">
+      A smart and efficient way to capture, organize, and explore your data in
+      real time.
+    </p>
+    <div class="hero-actions">
+      <div class="action-card">
+        <div class="action-icon"><i class="pi pi-user-plus"></i></div>
+        <h3 class="action-title">Add Customers</h3>
+        <p class="action-description">
+          Add new records, capture customer information and keep your data up to
+          date.
+        </p>
+        <p-button
+          icon="pi pi-home"
+          (click)="goToAddCustomer()"
+          label="Go to Entry"
+          variant="text"
+        ></p-button>
+      </div>
+      <div class="action-card">
+        <div class="action-icon"><i class="pi pi-users"></i></div>
+        <h3 class="action-title">View Customers</h3>
+        <p class="action-description">
+          Explore saved customer records, analyze information, and export
+          valuable insights.
+        </p>
+        <p-button
+          icon="pi pi-home"
+          label="View Records."
+          (click)="gotToViewCustomers()"
+          variant="text"
+        ></p-button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "Status_Tracking_Backend.Controllers.CustomerController",
+    "Method": "DeleteCustomer",
+    "RelativePath": "api/Customer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Status_Tracking_Backend.Controllers.CustomerController",
     "Method": "AddCustomer",
     "RelativePath": "api/Customer/addCustomer",
     "HttpMethod": "POST",
@@ -33,6 +49,48 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Status_Tracking_Backend.Controllers.CustomerController",
+    "Method": "GetDetails",
+    "RelativePath": "api/Customer/page",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Status_Tracking_Backend.Controllers.CustomerController",
+    "Method": "UpdateCustomer",
+    "RelativePath": "api/Customer/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customer",
+        "Type": "Status_Tracking_Backend.Models.Customers",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]
